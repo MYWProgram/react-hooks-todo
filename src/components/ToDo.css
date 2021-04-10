@@ -1,0 +1,69 @@
+.ToDo {
+  width: 80vw;
+  max-width: 768px;
+  max-height: 75vh;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+.Logo {
+  position: relative;
+  top: 50px;
+  width: 50px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .Logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+.ToDoHeader {
+  margin: 70px auto 30px;
+  color: #333;
+}
+.ToDoWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.ToDoInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.ToDoAdd {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  line-height: 48px;
+  color: skyblue;
+  background-image: linear-gradient(145deg, #e6e6e6, #fff);
+  border-radius: 8px;
+  border-color: transparent;
+  box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #fff;
+  cursor: pointer;
+}
+.ToDoAdd:hover {
+  box-shadow: 5px 5px 15px #ccc, -5px -5px 15px #fff;
+}
+.ToDoAdd:focus {
+  border: none;
+  outline: none;
+}
+.ToDoErrorWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 1rem;
+  color: red;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
